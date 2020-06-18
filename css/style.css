@@ -112,9 +112,89 @@ a.active, a:hover {
   }
 }
 
+section div h3.a, section div h5.b {
+  color: #edf0f1;
+  position: absolute;
+  top: 400px;
+  left: 500px;
+  bottom: 100px;
+}
+
 section {
   background: url(/img/cat-paw-l.png) no-repeat;
   background-size: cover;
   height: calc(100vh - 80px);
+}
+
+section div h3.a {
+  font-size: 50px;
+  top: 200px;
+  left: 100px;
+}
+
+@media (max-width: 858px) {
+  section div h3.a {
+    visibility: hidden;
+  }
+  section div h5.b {
+    visibility: hidden;
+  }
+}
+
+.img-hover img {
+  -webkit-transition: all .3s ease;
+  /* Safari and Chrome */
+  /* Firefox */
+  /* IE 9 */
+  /* Opera */
+  transition: all .3s ease;
+  position: relative;
+}
+
+.img-hover img:hover {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateZ(0) scale(1.2);
+  /* Safari and Chrome */
+  /* Firefox */
+  /* IE 9 */
+  /* Opera */
+  transform: translatZ(0) scale(1.2);
+}
+
+.img-hover:hover:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #000;
+}
+
+.grayscale {
+  -webkit-filter: brightness(1.1) grayscale(100%) contrast(90%);
+  -moz-filter: brightness(1.1) grayscale(100%) contrast(90%);
+  filter: brightness(1.1) grayscale(100%);
+}
+
+div.heading h3 {
+  background-color: gray;
+  color: #edf0f1;
+  font-size: 50px;
+  text-align: center;
+}
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  background-color: grey;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  color: grey;
 }
 /*# sourceMappingURL=style.css.map */

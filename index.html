@@ -4,12 +4,16 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- logo -->
     <link rel="icon" href="/img/logo.png" type="image/icon type">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" >
     <!-- custom css -->
     <link rel="stylesheet" href="/css/style.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <title>Home</title>
   </head>
@@ -21,17 +25,223 @@
         </label>
         <a class="logo" href="index.html"> Animal Rescue</a>
         <ul>
-            <li><a class="active" href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Feedback</a></li>
+            <li><a class="active" href="#section0">Home</a></li>
+            <li><a href="#section1">Photos</a></li>
+            <li><a href="#section2">Data</a></li>
+            <li><a href="#section3">About</a></li>
             <li><a href="login.html">Login</a></li>
-            <li><a href="#">Resgister</a></li>
+            <li><a href="#section4">Resgister</a></li>
         </ul>
      </nav>
 
-     <section></section>
+     <section id="section0">
+      <div class="col-sm-8">
+        <h3 class="a">Until one has loved an animal, <br> a part of one’s soul remains unawakened.</h3>
+        <h5 class="b"> -Anatole France</h5>
+      </div>
+     </section>
+    
+     <p></p>
+    
+     <div class="heading" id="section1">
+        <h3>
+          Photos of Rescued animals
+        </h3>
+     </div>
+
+     <div class="container">
+      <div class="row ">
+        <div class="col-sm col-md-4 img-hover"><img src="/img/1.jpg" class="img-fluid" height=auto max-width=100% alt="Responsive image"></div>
+        <div class="col-sm col-md-4  img-hover"><img src="/img/2.jpg" class="img-fluid" height=auto max-width=100% alt="Responsive image"></div>
+        <div class="col-sm col-md-4  img-hover"><img src="/img/3.jpg" class="img-fluid" height=auto max-width=100%  alt="Responsive image"></div>
+      </div>
+      <p></p>
+      <div class="row">
+        <div class="col-sm-4 col-md-4 img-hover"><img src="/img/4.jpg" class="img-fluid" height=auto max-width=100% alt="Responsive image"></div>
+        <div class="col-sm-4 col-md-4 img-hover"><img src="/img/5.jpg" class="img-fluid" height=auto max-width=100% alt="Responsive image"></div>
+        <div class="col-sm-4 col-md-4 img-hover"><img src="/img/6.jpg" class="img-fluid" height=auto max-width=100% alt="Responsive image"></div>
+      </div>
+      <p></p>
+      <div class="row">
+        <div class="col-sm-4 col-md-4 img-hover"><img src="/img/7.jpg" class="img-fluid"  height=auto max-width=100% alt="Responsive image"></div>
+        <div class="col-sm-4 col-md-4 img-hover"><img src="/img/8.jpg" class="img-fluid" height=auto max-width=100% alt="Responsive image"></div>
+        <div class="col-sm-4 col-md-4 img-hover"><img src="/img/9.jpg" class="img-fluid"  height=auto max-width=100% alt="Responsive image"></div>
+      </div>
+    </div>
+    <p></p>
+
+    <div class="heading" id="section2">
+      <h3>
+        Data of Rescued animals
+      </h3>
+   </div>
+
+   <div class="container">
+    <table class="table table-hover">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">#Serial No.</th>
+          <th scope="col">Aimal Type</th>
+          <th scope="col">Age (years)</th>
+          <th scope="col">Injure</th>
+          <th scope="col">Adoption</th>
+          <th scope="col">Location</th>
+          
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Cat</td>
+          <td>1</td>
+          <td>Skin disease</td>
+          <td>NO</td>
+          <td>Texas</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Dog</td>
+          <td>2</td>
+          <td>Broken leg</td>
+          <td>NO</td>
+          <td>Ohio</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Bird</td>
+          <td>0.5</td>
+          <td>None</td>
+          <td>Yes</td>
+          <td>New jersey</td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>Cat</td>
+          <td>0.4</td>
+          <td>None</td>
+          <td>Yes</td>
+          <td>California</td>
+        </tr>
+        <tr>
+          <th scope="row">5</th>
+          <td>Fox</td>
+          <td>4</td>
+          <td>Broken teeth</td>
+          <td>No</td>
+          <td>Michigan</td>
+        </tr>
+      </tbody>
+    </table>
+   </div>
+
+   <p></p>
+
+   <div class="heading" id="section4">
+    <h3>
+     Registration Form
+    </h3>
+   </div>
+    <div class="container">
+      <form>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">User Name</label>
+            <input type="text" class="form-control" id="name" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputPassword4">Pet Name</label>
+            <input type="text" class="form-control" id="pname">
+          </div>
+
+        
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Email</label>
+            <input type="email" class="form-control" id="inputEmail4" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputPassword4">Password</label>
+            <input type="password" class="form-control" id="inputPassword4">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputAddress2">Address</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputCity">City</label>
+            <input type="text" class="form-control" id="inputCity">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputState">State</label>
+            <select id="inputState" class="form-control">
+              <option selected>Choose...</option>
+              <option>Texas</option>
+              <option>Michigan</option>
+              <option>California</option>
+              <option>Ohio</option>
+              <option>new jersey</option>
+            </select>
+          </div>
+          <div class="form-group col-md-2">
+            <label for="inputZip">Zip</label>
+            <input type="text" class="form-control" id="inputZip">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-center">
+            <button class="btn btn-primary">Sign Up</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+   <p></p>
+
+   <div class="heading" id="section3">
+    <h3>
+      About Us
+    </h3>
+   </div>
+
+ <!-- Footer -->
+   <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-auto col-md-6">
+          <h6>About</h6>
+          <p class="text-justify"> animalrescue.com is a none profit company. Our goal is to rescue animal for street. Here people can adopt injured animal
+            and give them new home. We also accept donation for our animals. People can also share their pets photos. He/she can alert other people 
+            if he/she saw an injured animal. people around 50km will be notify for help.
+          </p>
+        </div>
+
+        <div class="col-lg-3 col-md-3">
+          <h6 class="x">Sections</h6>
+          <ul class="footer-links">
+            <li><a href="#section0">Home</a></li>
+            <li><a href="#section1">Photos</a></li>
+            <li><a href="#section2">Rescued Data</a></li>
+            <li><a href="#section4">Registration</a></li>
+            <li><a href="login.html">Login</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-3">
+          <h6 class="x">Social Media</h6>
+          <ul class="footer-links">
+            <a href="#" class="fa fa-facebook"></a> 
+            <a href="#" class="fa fa-google"></a> 
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-youtube"></a> 
+            <a href="#" class="fa fa-instagram"></a> 
+            <a href="#" class="fa fa-skype"></a>
+          </ul>
+        </div>
+
+      <hr>
+    </div>
+</footer>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>

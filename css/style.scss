@@ -105,9 +105,97 @@ $white:#edf0f1;
       left: 0;
     }
   }
+
+  %heading{
+    color: $white;
+    position: absolute; 
+    top: 400px;
+    left: 500px;
+    bottom: 100px;
+  }
   section{
     background: url(/img/cat-paw-l.png) no-repeat;
     background-size: cover;
     height: calc(100vh - 80px);
-  }
+    
+      div{
+        h3.a{
+          font-size: 50px;
+          top: 200px;
+          left: 100px;
+          @extend %heading;
   
+        }
+        h5.b{
+          @extend %heading;
+        }
+      }
+    @media (max-width: 858px) {
+      div{
+        h3.a{
+          visibility: hidden;
+        }
+        h5.b{
+          visibility: hidden;
+        }
+      }
+    }
+  }
+  .img-hover img {
+    -webkit-transition: all .3s ease; /* Safari and Chrome */
+  	-moz-transition: all .3s ease; /* Firefox */
+  	-o-transition: all .3s ease; /* IE 9 */
+  	-ms-transition: all .3s ease; /* Opera */
+  	transition: all .3s ease;
+  	position:relative;
+}
+.img-hover img:hover {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform:translateZ(0) scale(1.20); /* Safari and Chrome */
+    -moz-transform:scale(1.20); /* Firefox */
+    -ms-transform:scale(1.20); /* IE 9 */
+    -o-transform:translatZ(0) scale(1.20); /* Opera */
+    transform:translatZ(0) scale(1.20);
+}
+  
+.img-hover:hover:after {
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:2;
+    width:30px;
+    height:30px;
+    border:1px solid #000;
+}
+  
+.grayscale {
+  -webkit-filter: brightness(1.10) grayscale(100%) contrast(90%);
+  -moz-filter: brightness(1.10) grayscale(100%) contrast(90%);
+  filter: brightness(1.10) grayscale(100%); 
+}
+%section_heading{
+  background-color:gray;
+  color: $white;
+  font-size: 50px;
+  text-align: center;
+}
+div.heading{
+  h3{
+    @extend %section_heading;
+  }
+}
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  background-color: grey;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  color: grey;
+}
+
+
