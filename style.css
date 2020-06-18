@@ -121,7 +121,7 @@ section div h3.a, section div h5.b {
 }
 
 section {
-  background: url(https://github.com/nayeem01/animal-rescue/blob/master/img/cat-paw-l.png) no-repeat;
+  background: url(../img/cat-paw-l.png) no-repeat;
   background-size: cover;
   height: calc(100vh - 80px);
 }
