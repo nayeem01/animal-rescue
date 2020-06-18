@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.logo {
+  color: #f2f2f2;
+  font-size: 33px;
+  line-height: 80px;
+  padding: 0 140px;
+  font-weight: 600;
+  font-family: 'Sriracha', sans-serif;
+}
+
+.logo:hover {
+  background-color: #2a2a2b;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+
+nav {
+  background: #19191a;
+  height: 80px;
+  width: 100%;
+}
+
+nav ul {
+  float: right;
+  margin-right: 60px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 2px;
+}
+
+nav ul li a {
+  color: #edf0f1;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  font-family: 'Sriracha', sans-serif;
+}
+
+a.active, a:hover {
+  background-color: #2a2a2b;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 27px;
+    padding-left: 25px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+    margin-right: 40px;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #222425;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a:hover, a.active {
+    background-color: #282a2b;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+
+section div h3.a, section div h5.b {
+  color: #edf0f1;
+  position: absolute;
+  top: 400px;
+  left: 500px;
+  bottom: 100px;
+}
+
+section {
+  background: url(/img/cat-paw-l.png) no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
+}
+
+section div h3.a {
+  font-size: 50px;
+  top: 200px;
+  left: 100px;
+}
+
+@media (max-width: 858px) {
+  section div h3.a {
+    visibility: hidden;
+  }
+  section div h5.b {
+    visibility: hidden;
+  }
+}
+
+.img-hover img {
+  -webkit-transition: all .3s ease;
+  /* Safari and Chrome */
+  /* Firefox */
+  /* IE 9 */
+  /* Opera */
+  transition: all .3s ease;
+  position: relative;
+}
+
+.img-hover img:hover {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateZ(0) scale(1.2);
+  /* Safari and Chrome */
+  /* Firefox */
+  /* IE 9 */
+  /* Opera */
+  transform: translatZ(0) scale(1.2);
+}
+
+.img-hover:hover:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #000;
+}
+
+.grayscale {
+  -webkit-filter: brightness(1.1) grayscale(100%) contrast(90%);
+  -moz-filter: brightness(1.1) grayscale(100%) contrast(90%);
+  filter: brightness(1.1) grayscale(100%);
+}
+
+div.heading h3 {
+  background-color: gray;
+  color: #edf0f1;
+  font-size: 50px;
+  text-align: center;
+}
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  background-color: grey;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  color: grey;
+}
+/*# sourceMappingURL=style.css.map */
